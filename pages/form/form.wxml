@@ -1,0 +1,31 @@
+<!--pages/form/form.wxml-->
+<view class="form-wrapper">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="form-item">
+      <view class="title">姓名<span class="check">*</span></view>
+      <input name="username" placeholder="请填写姓名" />
+    </view>
+    <view class="form-item">
+      <view class="title">手机号<span class="check">*</span></view>
+      <input type='number' name="phone" placeholder="请填写手机号" />
+    </view>
+    <view class="form-item">
+      <view class="title">会籍人员ID<span class="check">*</span></view>
+      <input type='number' name="salesId" placeholder="请填写会籍人员ID" />
+    </view>
+    <view class="form-item">
+      <view class="title">身高</view>
+      <input type='number' name="height" placeholder="请填写身高" />
+    </view>
+    <view class="form-item">
+      <view class="title">体重</view>
+      <input type='number' name="weight" placeholder="请填写体重" />
+    </view>
+    <view class="form-item">
+      <view class="title">年龄</view>
+      <input type='number' name="age" placeholder="请填写年龄" />
+    </view>
+    <button class="form-button" form-type='submit'>提交</button>
+    <button class="form-button" form-type="reset">重置</button>
+  </form>
+</view>
